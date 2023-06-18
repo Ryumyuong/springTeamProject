@@ -16,10 +16,6 @@ public interface WaitingMapper {
 	public Waiting getMyWaiting(String w_username);
 	
 	public List<Waiting> getWaitingAll();
-	
-	public List<Waiting> getWaitingCom();
-	
-	public List<Waiting> getWaitingCan();
 
 	public void doInsertReserve(Waiting waiting);
 	

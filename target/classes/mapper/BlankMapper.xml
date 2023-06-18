@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.team.mapper.BlankMapper">
+    
+    <select id="getMyBlank" resultType="com.example.team.domain.Blank">
+    	select * from blank where b_username = #{b_username}
+    </select>
+    
+    <select id="getBlank" resultType="com.example.team.domain.Blank">
+    	select * from blank
+    </select>
+    
+    <delete id="deleteBlankList">
+		delete from blank where b_title=#{b_title}
+	</delete>
+ 
+</mapper>

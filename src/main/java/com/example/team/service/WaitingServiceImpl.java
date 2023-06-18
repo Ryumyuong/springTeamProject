@@ -23,14 +23,6 @@ public class WaitingServiceImpl implements WaitingService {
 	public List<Waiting> getWaitingAll() {
 		return waitingMapper.getWaitingAll();
 	}
-	@Override
-	public List<Waiting> getWaitingCom() {
-		return waitingMapper.getWaitingCom();
-	}
-	@Override
-	public List<Waiting> getWaitingCan() {
-		return waitingMapper.getWaitingCan();
-	}
 
 	@Override
 	public void doInsertReserve(Waiting waiting) {

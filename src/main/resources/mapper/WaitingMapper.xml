@@ -9,13 +9,7 @@
     </select>
     
     <select id="getWaitingAll" resultType="com.example.team.domain.Waiting">
-    	select * from waiting where w_waiting_confirm = "" or w_waiting_confirm ="방문예약" or w_waiting_confirm ="방문 상태 확인"
-    </select>
-    <select id="getWaitingCom" resultType="com.example.team.domain.Waiting">
-    	select * from waiting where w_waiting_confirm = "O"
-    </select>
-    <select id="getWaitingCan" resultType="com.example.team.domain.Waiting">
-    	select * from waiting where w_waiting_confirm = "X"
+    	select * from waiting
     </select>
     
     <insert id="doInsertReserve">

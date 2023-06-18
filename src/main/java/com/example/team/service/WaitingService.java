@@ -10,10 +10,6 @@ public interface WaitingService {
 	
 	public List<Waiting> getWaitingAll();
 	
-	public List<Waiting> getWaitingCom();
-	
-	public List<Waiting> getWaitingCan();
-	
 	public void doInsertReserve(Waiting waiting);
 	
 	public void deleteWaitingList(String w_title);

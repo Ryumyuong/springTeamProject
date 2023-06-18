@@ -33,23 +33,7 @@ public class WaitingController {
 	public Map<String,List<Waiting>> getWaitingAll() {
 		Map<String,List<Waiting>> waiting = new HashMap<String,List<Waiting>>();
 		waiting.put("items", waitingService.getWaitingAll());
-		System.out.println("Waiting=====getWaiting==============="+waitingService.getWaitingAll());
-		return waiting;
-	}
-	
-	@GetMapping("waitingCom")
-	public Map<String,List<Waiting>> getWaitingCom() {
-		Map<String,List<Waiting>> waiting = new HashMap<String,List<Waiting>>();
-		waiting.put("items", waitingService.getWaitingCom());
-		System.out.println("Waiting=====getWaiting==============="+waitingService.getWaitingCom());
-		return waiting;
-	}
-	
-	@GetMapping("waitingCan")
-	public Map<String,List<Waiting>> getWaitingCan() {
-		Map<String,List<Waiting>> waiting = new HashMap<String,List<Waiting>>();
-		waiting.put("items", waitingService.getWaitingCan());
-		System.out.println("Waiting=====getWaiting==============="+waitingService.getWaitingCan());
+		System.out.println("Waiting=====getWaitingAll==============="+waitingService.getWaitingAll());
 		return waiting;
 	}
 	
