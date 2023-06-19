@@ -34,4 +34,10 @@ public class WaitingServiceImpl implements WaitingService {
 		waitingMapper.deleteWaitingList(w_title);
 	}
 
+	@Override
+	public void updateReserve(Waiting waiting) {
+		waitingMapper.updateReserve(waiting);
+		
+	}
+
 }

@@ -15,4 +15,5 @@ public class Blank {
 	private String b_date;
 	private String b_people;
 	private String b_time;
+	private String b_blank_confirm;
 }

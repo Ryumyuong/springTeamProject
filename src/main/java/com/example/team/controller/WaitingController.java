@@ -52,5 +52,15 @@ public class WaitingController {
 		
 		return waiting;
 	}
+	
+	@PostMapping("update")
+	public Waiting updateReserve(@RequestBody Waiting waiting) {
+		if(!waiting.getW_title().equals("")) {
+			System.out.println("===============입력 성공================");
+			waitingService.updateReserve(waiting);
+		}
+		
+		return waiting;
+	}
 }
 

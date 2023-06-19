@@ -20,4 +20,6 @@ public interface WaitingMapper {
 	public void doInsertReserve(Waiting waiting);
 	
 	public void deleteWaitingList(String w_title);
+	
+	public void updateReserve(Waiting waiting);
 }
