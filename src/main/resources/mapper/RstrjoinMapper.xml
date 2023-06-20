@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.team.mapper.RstrjoinMapper">
+
+	<select id="getRstrjoinList" resultType="com.example.team.domain.Rstrjoin">
+		select * from rstrjoin 
+	</select>
+	
+
+	<select id="getRead" resultType="com.example.team.domain.Rstrjoin">
+		select * from rstrjoin where rstr_nm = #{rstr_nm}
+	</select>
+	
+	<select id="ranGetList" resultType="com.example.team.domain.Rstrjoin">
+		select * from rstrjoin order by rand() limit 4
+	</select>
+	
+	<select id="getsearch" resultType="com.example.team.domain.Rstrjoin">
+		select * from rstrjoin where rstr_nm = #{rstr_nm}
+	</select>
+</mapper>

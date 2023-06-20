@@ -37,7 +37,7 @@ public class BlankController {
 	}
 
 	
-	@PostMapping("blank/delete/{w_title}")
+	@PostMapping("blank/delete/{b_title}")
 	public void deleteBlankList(@PathVariable("b_title") String b_title) {
 		System.out.println("===============삭제 성공================");
 		blankService.deleteBlankList(b_title);

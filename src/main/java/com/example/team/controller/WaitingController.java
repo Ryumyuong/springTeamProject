@@ -47,6 +47,7 @@ public class WaitingController {
 	public Waiting doInsertReserve(@RequestBody Waiting waiting) {
 		if(!waiting.getW_title().equals("")) {
 			System.out.println("===============입력 성공================");
+			System.out.println("img확인 : "+waiting.getW_image());
 			waitingService.doInsertReserve(waiting);
 		}
 		

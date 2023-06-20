@@ -13,11 +13,15 @@
     </select>
     
     <insert id="doInsertReserve">
-    	insert into waiting(w_username, w_title, w_item, w_waiting, w_date, w_time, w_people, w_waiting_confirm) values(#{w_username}, #{w_title}, #{w_item}, #{w_waiting}, #{w_date}, #{w_time}, #{w_people}, #{w_waiting_confirm})
+    	insert into waiting(w_username, w_image, w_title, w_item, w_waiting, w_date, w_time, w_people, w_waiting_confirm) values(#{w_username}, #{w_image}, #{w_title}, #{w_item}, #{w_waiting}, #{w_date}, #{w_time}, #{w_people}, #{w_waiting_confirm})
     </insert>
     
     <delete id="deleteWaitingList">
 		delete from waiting where w_title=#{w_title}
 	</delete>
+	
+	<update id="updateReserve">
+		update waiting set w_date = #{w_date}, w_time = #{w_time}, w_people = #{w_people}, w_waiting_confirm = #{w_waiting_confirm} where w_title = #{w_title}
+	</update>
  
 </mapper>
