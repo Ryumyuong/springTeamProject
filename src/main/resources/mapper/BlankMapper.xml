@@ -15,5 +15,9 @@
     <delete id="deleteBlankList">
 		delete from blank where b_title=#{b_title}
 	</delete>
+	
+	<insert id="doInsertBlank">
+    	insert into blank(b_username, b_image, b_title, b_date, b_people, b_time, b_blank_confirm) values(#{b_username}, #{b_image}, #{b_title}, #{b_date}, #{b_people}, #{b_time}, #{b_blank_confirm})
+    </insert>
  
 </mapper>

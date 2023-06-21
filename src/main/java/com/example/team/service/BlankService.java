@@ -10,5 +10,7 @@ public interface BlankService {
 	
 	public List<Blank> getBlank();
 	
+	public void doInsertBlank(Blank blank);
+	
 	public void deleteBlankList(String b_title);
 }

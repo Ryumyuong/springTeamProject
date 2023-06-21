@@ -29,4 +29,10 @@ public class BlankServiceImpl implements BlankService {
 		blankMapper.deleteBlankList(b_title);
 	}
 
+	@Override
+	public void doInsertBlank(Blank blank) {
+		blankMapper.doInsertBlank(blank);
+		
+	}
+
 }
